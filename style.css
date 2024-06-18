@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    background-color: #171715;
+    color: white;
+    margin: 50px;
+    font-family: "Inter", sans-serif;;
+}
+
+span{
+    color: #D113B3;
+}
+
+.cabecalho{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    margin-top: 86px;
+}
+
+.imagens{
+    display: flex;
+    gap: 156px;
+    justify-content: center;
+    margin-top: 86px;
+}
+
+.comprar{
+    display: block;
+    text-align: center;
+}
+
+p{
+    margin-top: 86px;
+    margin-bottom: 28px;
+    font-size: 24px;
+}
+
+a{
+    background-color: #4D0742;
+    padding: 8px 92px 8px 92px;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color:#620e55;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+.imagens:nth-child(2){
+    transition-delay: 2s;
+}
+
+.imagens:nth-child(3){
+    transition-delay: 3s;
+}
+
+
+
